@@ -1,0 +1,17 @@
+name: generate ascci
+
+on: push
+
+jobs:
+    ascii_jobs:
+        runs-on: ubuntu-latest
+        steps:
+        - name: checkout Repo
+          uses: actions/checkout@v4
+
+        - name: install cowsay
+          run: sudo apt-get install cowsay -y
+
+        - name: Welcome message
+          run: cowsay -f dragon " Im DRAGON" >> dragon.txt
+             
