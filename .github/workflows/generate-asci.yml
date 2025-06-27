@@ -10,6 +10,8 @@ jobs:
           uses: actions/checkout@v4
 
         - name: excute shell script
-          run: ./asci-script.sh
+          run: |
+            chmod +x asci-script.sh
+            ./asci-script.sh
  
              
