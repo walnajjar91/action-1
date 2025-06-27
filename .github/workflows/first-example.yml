@@ -11,11 +11,11 @@ jobs:
 
           
         - name: Welcome message
-          run: echo "my first github action"
+          run: |  
+            echo "my first github action"
+            ls -ltra
+            cat README.md 
 
-        - name : List files
-          run: ls
-
-        - name: Read file 
-          run: cat README.md
+        - name: Welcome message
+          run: cowsay -f dragon " Im DRAGON" >> dragon.txt
              
