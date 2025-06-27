@@ -9,9 +9,7 @@ jobs:
         - name: checkout Repo
           uses: actions/checkout@v4
 
-        - name: install cowsay
-          run: sudo apt-get install cowsay -y
-
-        - name: Welcome message
-          run: cowsay -f dragon " Im DRAGON" >> dragon.txt
+        - name: excute shell script
+          run: ./asci-script.sh
+ 
              
